@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# IDE / OS
+.DS_Store
+.vscode/
+.idea/
+
+# Runtime uploads / generated output
+data/uploads/*
+!data/uploads/.gitkeep
+htmlcov/
+coverage.xml
+*.html
+
+# Submission working files / temporary exports
+~$*
+*.tmp
