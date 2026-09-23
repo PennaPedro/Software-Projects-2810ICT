@@ -4,7 +4,7 @@
 |---|---|---|
 | Complete Consolidated Requirements List | Dev + Lakshay | Done |
 | Complete Risk Register | Lakshay | Done |
-| Define Tariff Configuration Data Model | Mohit + Pedro | To Do |
+| Define Tariff Configuration Data Model | Mohit + Pedro | Done |
 | Complete Quality Metrics Plan | Dev | To Do |
 | Create Use Case Diagram | Pedro | To Do |
 | Write Use Case Descriptions | Pedro + Lakshay | To Do |
@@ -15,6 +15,6 @@
 
 ## Sprint Progress
 
-2 of 10 Sprint 2 tasks are complete.
+3 of 10 Sprint 2 tasks are complete.
 
 Some development work planned around this stage is already ahead of schedule. Data Import, Flat Rate, Tiered and Time-of-Use tariff calculations have already been implemented and tested, so they are not repeated in this Sprint backlog.
