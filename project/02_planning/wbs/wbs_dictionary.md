@@ -100,9 +100,3 @@ Responsible, durations, project days and predecessors are taken from the approve
 | **Risks** | Late completion of the functions leaves too little time for testing and fixing. *Response:* write tests as each function is finished, not only in Week 4. |
 
 ---
-
-## Review and sign-off
-
-| Reviewer | Date | Comments |
-|---|---|---|
-| | | |
