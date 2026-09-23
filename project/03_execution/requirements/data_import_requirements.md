@@ -1,6 +1,6 @@
 # CSV / Excel Electricity Data Requirements Analysis
 
-**Status:** Done for requirements analysis; implementation remains To Do.
+**Status:** Done
 
 ## Purpose
 XPower requires customers to upload household electricity consumption data from CSV or Excel files. The data may contain daily or hourly electricity usage and must be usable by the tariff-calculation features.
