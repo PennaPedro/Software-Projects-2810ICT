@@ -1,6 +1,7 @@
 """Tests for CSV/Excel data import and validation."""
 
 from pathlib import Path
+import warnings
 
 import pandas as pd
 import pytest
@@ -24,6 +25,10 @@ def valid_csv(tmp_path: Path) -> Path:
     return path
 
 
+def assert_no_warnings(recorded_warnings):
+    assert recorded_warnings == []
+
+
 def test_load_valid_csv_and_normalise_columns(valid_csv: Path):
     result = load_electricity_data(valid_csv)
 
@@ -42,9 +47,11 @@ def test_load_valid_excel(tmp_path: Path):
         }
     ).to_excel(path, index=False)
 
-    with pytest.warns(None):
+    with warnings.catch_warnings(record=True) as recorded:
+        warnings.simplefilter("always")
         result = load_electricity_data(path)
 
+    assert_no_warnings(recorded)
     assert list(result.columns) == ["timestamp", "usage_kwh"]
     assert result["usage_kwh"].sum() == pytest.approx(22.5)
 
@@ -58,9 +65,11 @@ def test_valid_daily_data_does_not_warn_about_24_hour_intervals(tmp_path: Path):
         }
     ).to_csv(path, index=False)
 
-    with pytest.warns(None):
+    with warnings.catch_warnings(record=True) as recorded:
+        warnings.simplefilter("always")
         result = load_electricity_data(path)
 
+    assert_no_warnings(recorded)
     assert len(result) == 3
 
 
