@@ -1,7 +1,5 @@
 # WBS Dictionary
 
-**Status:** Draft – Ready for Team Review
-
 The assignment requires WBS Dictionary entries for a minimum of four selected work packages. The four work packages below were chosen because they are the core deliverables of the prototype: getting the data in, calculating two of the required tariffs, and proving the calculations work.
 
 | WBS ID | Work Package | Responsible |
