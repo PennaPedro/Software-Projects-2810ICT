@@ -8,13 +8,13 @@
 | Complete Quality Metrics Plan | Dev | Done |
 | Create Use Case Diagram | Pedro | Done |
 | Write Use Case Descriptions | Pedro + Lakshay | Done |
-| Create UI Wireframes | Dev | To Do |
+| Create UI Wireframes | Pedro | Done |
 | Create Requirements Traceability Matrix | Mohit + Dev | To Do |
 | Start High-Level Architecture Diagram | Mohit + Dev | To Do |
 | Review Sprint 2 work together | Whole Team | To Do |
 
 ## Sprint Progress
 
-6 of 10 Sprint 2 tasks are complete.
+7 of 10 Sprint 2 tasks are complete.
 
 Some development work planned around this stage is already ahead of schedule. Data Import, Flat Rate, Tiered and Time-of-Use tariff calculations have already been implemented and tested, so they are not repeated in this Sprint backlog.
