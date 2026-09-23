@@ -3,7 +3,7 @@
 **Project Duration:** 5 weeks  
 **Budget:** $10,000  
 **Project Team:** Mohit, Dev, Pedro and Lakshay  
-**Status:** Ready for Team Review
+**Status:** Approved
 
 ## Project Purpose
 
