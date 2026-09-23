@@ -27,7 +27,7 @@ def _normalise_column_name(name: object) -> str:
     return str(name).strip().lower().replace(" ", "_")
 
 
-def _find_column(columns: list[str], aliases: set[str]) -> str | None:
+def _find_column(columns: list[object], aliases: set[str]) -> object | None:
     """Find the first column whose normalised name is in aliases."""
     for column in columns:
         if _normalise_column_name(column) in aliases:
@@ -43,6 +43,44 @@ def _read_file(file_path: Path) -> pd.DataFrame:
     if suffix == ".xlsx":
         return pd.read_excel(file_path, sheet_name=0)
     raise DataImportError("Unsupported file type. Please select a .csv or .xlsx file.")
+
+
+def _warn_about_missing_periods(result: pd.DataFrame) -> None:
+    """Warn about gaps for supported hourly or daily datasets.
+
+    The expected interval is inferred from the median timestamp difference so
+    valid daily data is not incorrectly reported as having missing hours.
+    Missing values are never invented automatically.
+    """
+    if len(result) < 2:
+        return
+
+    differences = result["timestamp"].diff().dropna()
+    if differences.empty:
+        return
+
+    median_difference = differences.median()
+
+    if median_difference <= pd.Timedelta(hours=2):
+        expected_interval = pd.Timedelta(hours=1)
+        frequency_name = "hourly"
+    elif median_difference >= pd.Timedelta(hours=20):
+        expected_interval = pd.Timedelta(days=1)
+        frequency_name = "daily"
+    else:
+        # The prototype requirements cover hourly and daily data. Do not make
+        # assumptions about an unsupported sampling interval.
+        return
+
+    gaps = differences > expected_interval
+    if gaps.any():
+        count = int(gaps.sum())
+        warnings.warn(
+            f"The {frequency_name} data contains {count} missing time period(s). "
+            "Missing periods were not filled.",
+            UserWarning,
+            stacklevel=3,
+        )
 
 
 def _validate_and_normalise(data: pd.DataFrame) -> pd.DataFrame:
@@ -90,18 +128,7 @@ def _validate_and_normalise(data: pd.DataFrame) -> pd.DataFrame:
         )
 
     result = result.sort_values("timestamp").reset_index(drop=True)
-
-    # For hourly data, warn about gaps rather than inventing missing usage values.
-    if len(result) > 1:
-        differences = result["timestamp"].diff().dropna()
-        hourly_gaps = differences > pd.Timedelta(hours=1)
-        if hourly_gaps.any():
-            gaps = int(hourly_gaps.sum())
-            warnings.warn(
-                f"The data contains {gaps} time gap(s). Missing periods were not filled.",
-                UserWarning,
-                stacklevel=2,
-            )
+    _warn_about_missing_periods(result)
 
     return result
 
