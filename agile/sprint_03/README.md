@@ -1,15 +1,27 @@
 # Sprint 3
 
-**Planned focus:** complete the remaining prototype implementation, integration and testing.
+**Focus:** complete the remaining prototype implementation, integration and testing.
 
-The main work continuing from Sprint 2 is:
+## Sprint Goal
+
+Complete the remaining XPower prototype features and connect the existing modules into a working end-to-end application.
+
+## Sprint 3 Work
+
+Sprint 3 covers:
 
 - bill comparison and savings calculations;
 - cost-saving suggestions;
 - usage and bill visualisation;
-- user interface implementation based on the completed wireframes;
+- user interface implementation based on the approved wireframes;
 - module integration and end-to-end testing;
-- final test evidence and defect fixes; and
-- updating traceability and submission evidence as features are completed.
+- positive and negative tests for the new functions;
+- full test execution and defect fixes; and
+- updating traceability and final evidence as features are completed.
 
-The detailed Sprint Goal and Sprint Backlog will be created during Sprint 3 Planning.
+See:
+
+- `sprint_goal.md`
+- `sprint_backlog.md`
+
+Coding work will be completed on feature branches and reviewed before being merged into `main`.
