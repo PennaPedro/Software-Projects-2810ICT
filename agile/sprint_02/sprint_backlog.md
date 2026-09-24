@@ -11,10 +11,10 @@
 | Create UI Wireframes | Pedro | Done |
 | Create Requirements Traceability Matrix | Mohit | Done |
 | Start High-Level Architecture Diagram | Dev | Done |
-| Review Sprint 2 work together | Whole Team | To Do |
+| Review Sprint 2 work together | Whole Team | Done |
 
 ## Sprint Progress
 
-9 of 10 Sprint 2 tasks are complete.
+**10 of 10 Sprint 2 tasks are complete.**
 
-Some development work planned around this stage is already ahead of schedule. Data Import, Flat Rate, Tiered and Time-of-Use tariff calculations have already been implemented and tested, so they are not repeated in this Sprint backlog.
+Sprint 2 is now closed. Data Import, Flat Rate, Tiered and Time-of-Use tariff calculations were also completed ahead of the original Sprint 2 planning/design focus.
