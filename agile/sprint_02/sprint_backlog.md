@@ -9,12 +9,12 @@
 | Create Use Case Diagram | Pedro | Done |
 | Write Use Case Descriptions | Pedro + Lakshay | Done |
 | Create UI Wireframes | Pedro | Done |
-| Create Requirements Traceability Matrix | Mohit + Dev | To Do |
+| Create Requirements Traceability Matrix | Mohit | Done |
 | Start High-Level Architecture Diagram | Dev | Done |
 | Review Sprint 2 work together | Whole Team | To Do |
 
 ## Sprint Progress
 
-8 of 10 Sprint 2 tasks are complete.
+9 of 10 Sprint 2 tasks are complete.
 
 Some development work planned around this stage is already ahead of schedule. Data Import, Flat Rate, Tiered and Time-of-Use tariff calculations have already been implemented and tested, so they are not repeated in this Sprint backlog.
