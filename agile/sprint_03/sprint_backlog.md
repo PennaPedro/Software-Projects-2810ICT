@@ -10,12 +10,12 @@
 | Integrate Data Import, Tariffs, Billing, Visualisation and UI | Dev + Lakshay + Pedro | Done |
 | Add Positive and Negative Tests for New Functions | Lakshay + Pedro | Done |
 | Run Full Test Suite and Fix Defects | Whole Team | Done |
-| Update Requirements Traceability Matrix | Mohit | To Do |
+| Update Requirements Traceability Matrix | Mohit | Done |
 | Review Sprint 3 Work | Whole Team | To Do |
 
 ## Sprint Progress
 
-8 of 10 Sprint 3 tasks are complete.
+9 of 10 Sprint 3 tasks are complete.
 
 ## Development Branches
 
