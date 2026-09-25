@@ -5,7 +5,7 @@
 | Implement Bill Comparison | Pedro | Done |
 | Implement Savings Calculation | Pedro | Done |
 | Implement Cost-Saving Suggestions | Pedro | Done |
-| Implement Usage and Bill Visualisations | Dev | To Do |
+| Implement Usage and Bill Visualisations | Dev | Done |
 | Implement User Interface from Wireframes | Pedro | To Do |
 | Integrate Data Import, Tariffs, Billing, Visualisation and UI | Dev + Lakshay + Pedro | To Do |
 | Add Positive and Negative Tests for New Functions | Lakshay + Pedro | To Do |
@@ -15,13 +15,13 @@
 
 ## Sprint Progress
 
-3 of 10 Sprint 3 tasks are complete.
+4 of 10 Sprint 3 tasks are complete.
 
 ## Development Branches
 
 Coding work for Sprint 3 is completed on feature branches and reviewed before being merged into `main`:
 
 - `feature/billing-savings` - merged through PR #8
-- `feature/visualisation`
+- `feature/visualisation` - merged through PR #11
 - `feature/ui`
 - `feature/integration-testing`
