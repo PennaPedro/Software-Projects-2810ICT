@@ -11,15 +11,17 @@
 | Add Positive and Negative Tests for New Functions | Lakshay + Pedro | Done |
 | Run Full Test Suite and Fix Defects | Whole Team | Done |
 | Update Requirements Traceability Matrix | Mohit | Done |
-| Review Sprint 3 Work | Whole Team | To Do |
+| Review Sprint 3 Work | Whole Team | Done |
 
 ## Sprint Progress
 
-9 of 10 Sprint 3 tasks are complete.
+10 of 10 Sprint 3 tasks are complete.
+
+**Sprint 3 Status:** Complete
 
 ## Development Branches
 
-Coding work for Sprint 3 is completed on feature branches and reviewed before being merged into `main`:
+Coding work for Sprint 3 was completed on feature branches and reviewed before being merged into `main`:
 
 - `feature/billing-savings` - merged through PR #8
 - `feature/visualisation` - merged through PR #11
